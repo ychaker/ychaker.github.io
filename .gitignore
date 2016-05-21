@@ -1,0 +1,9 @@
+# Jekyll
+_site
+.sass-cache
+
+# Vagrant
+.vagrant
+
+# Mac
+.DS_Store

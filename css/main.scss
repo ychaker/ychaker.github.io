@@ -11,19 +11,17 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #DA4167;
-$background-color: #F0EFF4;
-$brand-color:      #DA4167;
+$text-color:       #FFF;
+$background-color: #FFF;
 $body-bg:          $background-color;
 
-$secondary-color:  #3D2645;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$brand-color:      #29255F;
+$secondary-color:  #Bf1E55;
+$uva-color:        #FF981E;
 
 // import bootstrap
 @import "bootstrap";
+@import "full_page";
 
 // import custom styles
 @import "layout";

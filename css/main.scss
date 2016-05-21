@@ -4,9 +4,11 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
+$font-family-base: Museo700, Arial, sans-serif;
+$font-size-base:   16px;
+$font-size-small:  $font-size-base * 0.875;
+$font-size-h1:     2.8em;
+$font-size-h2:     1.8em;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
@@ -19,10 +21,19 @@ $brand-color:      #29255F;
 $secondary-color:  #Bf1E55;
 $uva-color:        #FF981E;
 
+@mixin border-radius($radius) {
+     border-top-right-radius: $radius;
+      border-top-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+   border-bottom-left-radius: $radius;
+}
+
+
 // import bootstrap
 @import "bootstrap";
 @import "full_page";
 
 // import custom styles
+@import "fonts";
 @import "layout";
 @import "sections";

@@ -1,20 +1,154 @@
 .section {
   background-repeat: no-repeat;
   background-size:   cover;
+  position:          relative;
+
+  .section-header {
+    left:     135px;
+    position: absolute;
+    top:      calc(50% - 37px);
+    z-index:  100;
+
+    @media (max-width: $screen-xs-max) {
+      left: 30px;
+    }
+  }
+
+  h1 {
+    background-color: $brand-color;
+    display:          inline-block;
+    font-size:        $font-size-h1;
+    letter-spacing:   2.7px;
+    line-height:      1em;
+    margin:           0;
+    padding:          15px 20px;
+
+    @include border-radius(10px);
+
+    @media (max-width: $screen-xs-max) {
+      @include border-radius(5px);
+
+      font-size: $font-size-h1 / 2;
+    }
+  }
+
+  h2 {
+    background-color: $brand-color;
+    display:          inline-block;
+    font-size:        $font-size-h2;
+    letter-spacing:   2.7px;
+    line-height:      1em;
+    margin:           6px 0 0;
+    padding:          15px 20px;
+
+    @include border-radius(10px);
+
+    @media (max-width: $screen-xs-max) {
+      @include border-radius(5px);
+
+      font-size: $font-size-h2 / 2;
+    }
+  }
 }
 
 #home {
-  background-color: $brand-color;
+  background-color:    $brand-color;
+  background-image:    url('/images/austin.jpg');
+  background-position: 50% 70%;
 }
 
 #who {
-  background-color: #FFF;
+  background: linear-gradient(to right bottom, $secondary-color 50%, $brand-color 50%);
+
+  .desk {
+    background-image:    url('/images/desk.png');
+    background-position: 75% 50%;
+    background-repeat:   no-repeat;
+    background-size:     50%;
+    height:              100%;
+    width:               100%;
+
+    @media (max-width: $screen-xs-max) {
+      background-position:  50% 75%;
+      background-size:      90%;
+    }
+  }
+
+  .section-header {
+    top: calc(50% - 101px);
+
+    @media (max-width: $screen-xs-max) {
+      top: calc(50% - 76px);
+    }
+  }
 }
 
 #traveler {
-  background-color: $secondary-color;
+  background-color:    $secondary-color;
+  background-image:    url('/images/traveler.jpg');
+  background-position: 50% 45%;
 }
 
 #uva {
-  background-color: $uva-color;
+  background-color:    $uva-color;
+  background-image:    url('/images/uva.jpg');
+  background-position: 50% 75%;
+
+  h1, h2 {
+    background-color: $uva-color;
+  }
+
+  .section-header {
+    top: calc(50% - 69px);
+  }
+}
+
+#tedx-beirut {
+  background-color:    #000;
+  background-image:    url('/images/tedxbeirut-background.jpg');
+  background-position: 50% 45%;
+
+  h1, h2 {
+    background-color: #000;
+  }
+
+  h1 {
+    background-image:    url("/images/tedxbeirut-logo.png");
+    background-position: 20px;
+    background-repeat:   no-repeat;
+    background-size:     220px 50px;
+    height:              75px;
+    text-indent:         -999em;
+    width:               260px;
+  }
+
+  .section-header {
+    top: calc(50% - 69px);
+  }
+}
+
+#socks {
+  background-color:    $brand-color;
+  background-image:    url('/images/socks.jpg');
+  background-position: 50% 60%;
+
+  h1 {
+    background-color: $brand-color;
+  }
+
+  h2 {
+    background-color: $uva-color;
+  }
+
+  .section-header {
+    top: calc(50% - 69px);
+  }
+}
+
+#fp-nav ul li a {
+  border: none !important;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #FFF;
 }

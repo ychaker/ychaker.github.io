@@ -1,0 +1,16 @@
+# Site settings
+title: Youssef Chaker
+email: youssef@bearandgiraffe.com
+description: > # this means to ignore newlines until "baseurl:"
+  Personal portfolio site of Youssef Chaker | Software Development | UVA
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://youhoo.im" # the base hostname & protocol for your site
+
+# Social Media
+yc_twitter_username: ychaker
+yc_github_username:  ychaker
+
+# Build settings
+markdown: kramdown
+
+exclude: [Vagrantfile, README.md, LICENSE, CNAME]

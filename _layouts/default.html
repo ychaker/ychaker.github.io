@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    {% if jekyll.environment == 'production' %}
+      {% include analytics.html %}
+      <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    {% else %}
+      <script type="text/javascript" src="javascripts/jquery-2.1.4.min.js"></script>
+    {% endif %}
+
+    <script type="text/javascript" src="javascripts/application.js"></script>
+  </body>
+</html>

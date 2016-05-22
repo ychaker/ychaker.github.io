@@ -1,12 +1,13 @@
 # Site settings
-title: Youssef Chaker
-email: youssef@bearandgiraffe.com
+title:       Youssef Chaker
+email:       youssef@bearandgiraffe.com
 description: > # this means to ignore newlines until "baseurl:"
   Personal portfolio site of Youssef Chaker | Software Development | UVA
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://youhoo.im" # the base hostname & protocol for your site
-logo: "/images/ychaker-logo.png"
-favicon: "/favicon.ico"
+baseurl:     "" # the subpath of your site, e.g. /blog/
+url:         "http://youhoo.im" # the base hostname & protocol for your site
+logo:        "/images/ychaker-logo.png"
+fb_image:    "/images/fb-og-image.jpg"
+favicon:     "/favicon.ico"
 
 # Social Media
 yc_twitter_username: ychaker

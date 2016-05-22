@@ -9,6 +9,7 @@ $font-size-base:   16px;
 $font-size-small:  $font-size-base * 0.875;
 $font-size-h1:     2.8em;
 $font-size-h2:     1.8em;
+$font-size-h3:     1.4em;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
@@ -37,3 +38,4 @@ $uva-color:        #FF981E;
 @import "fonts";
 @import "layout";
 @import "sections";
+@import "404";
